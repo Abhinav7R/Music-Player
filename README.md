@@ -35,6 +35,7 @@ The footer warns about copyright act.
 It also contains link to About Page which can be accessed by clicking on <About Us>.
 
 The directory structure is as below:
+```
 .
 ├── about.html
 ├── abtstyle.css
@@ -179,3 +180,4 @@ The directory structure is as below:
 ├── TheseDays.html
 ├── v.html
 └── waking.html
+```
