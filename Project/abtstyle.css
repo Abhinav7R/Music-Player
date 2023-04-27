@@ -18,6 +18,7 @@ body {
   padding-top: 60px;
 }
 
+
 .container1 {
     display: flex;
     justify-content: space-between;
@@ -195,4 +196,25 @@ body {
   footer a {
     text-decoration: none;
     color: #fff;
+  }
+
+  /* ############################################# */
+
+  .element {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .element::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    right: -2px;
+    bottom: -1px;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 0 2px blanchedalmond;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 2.5px;
   }
