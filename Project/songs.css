@@ -7,7 +7,7 @@
   }
   body {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; 
     color: #333;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -208,5 +208,26 @@
     text-decoration: none;
     color: #fff;
   }
+
+  /* ################################################################################################ */
+  .add-to-playlist {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .add-to-playlist:hover {
+    background-color: #090723;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+    opacity: 0.2 ;
+  }
+  
   
   

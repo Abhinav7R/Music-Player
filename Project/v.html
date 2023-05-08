@@ -13,22 +13,31 @@
 </head>
 <body>
     
-    <nav class="navbar">
-        <div class="container">
-          <div class="logo"><img class="logo-img" src="logo.png" width="65" height="65" ALT="align box" ALIGN=CENTER>   Quaver</div>
-          <ul class="nav">
-            <li>
-              <a href="index.html#">Home</a>
-            </li>
-            <li>
-              <a href="artist.html#", style="color: lightblue;">Artists</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><img class="logo-img" src="logo.png" width="65" height="65" ALT="align box" ALIGN=CENTER>   Quaver</div>
+      <ul class="nav">
+        <li>
+          <a href="index.html#">Home</a>
+        </li>
+        <li>
+          <a href="artist.html#">Artists</a>
+        </li>
+        <li>
+          <a href="search.html">Search</a>
+        </li>
+        <li>
+          <a href="spotlight.html">Artist Spotlight</a>
+        </li>
+        <li>
+          <a href="playlistpage.html">Playlist</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <!-- ####################################################################################################################################### -->
       
@@ -47,35 +56,93 @@
       <br>
       <br>
       
-      <img src="clock.png" width="47" height="50" style="position: absolute; top: 475px; right: 167px;">
+      <img src="clock.png" width="47" height="50" style="position: absolute; top: 475px; right: 325px;">
 
       <div class="song">
         <div class="mysongs">1. Maps</div>03:10
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Maps">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="03:10">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">2. Animals</div>03:51
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Animals">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="03:51">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">3. Sugar</div>03:55
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Sugar">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="03:55">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">4. Feelings</div>03:14
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Feelings">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="03:14">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">5. This Summer's Gonna Hurt like a Motherfucker</div>03:44
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="This Summer's Gonna Hurt like a Motherfucker">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="03:44">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">6. Unkiss Me</div>03:58
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Unkiss Me">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="03:58">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">7. Lost Stars</div>04:27
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Lost Stars">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="04:27">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">8. Sex and Candy</div>04:25
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Sex and Candy">
+          <input type="hidden" name="album_name" value="V">
+          <input type="hidden" name="duration" value="04:25">
+          <input type="hidden" name="artist" value="Maroon 5">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <footer>
         <p>&copy; 2023 My Website. All rights reserved. | Website developed by AC Coders | <a href="about.html">About Us</a></p>
         </footer>
+        <script src="scripthome.js"></script>
+        <script src="addplaylist.js"></script>
       
       
       

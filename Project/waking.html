@@ -13,22 +13,31 @@
 	<title>Waking Up</title> 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-          <div class="logo"><img class="logo-img" src="logo.png" width="65" height="65" ALT="align box" ALIGN=CENTER>   Quaver</div>
-          <ul class="nav">
-            <li>
-              <a href="index.html#">Home</a>
-            </li>
-            <li>
-              <a href="artist.html#", style="color: lightblue;">Artists</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><img class="logo-img" src="logo.png" width="65" height="65" ALT="align box" ALIGN=CENTER>   Quaver</div>
+      <ul class="nav">
+        <li>
+          <a href="index.html#">Home</a>
+        </li>
+        <li>
+          <a href="artist.html#">Artists</a>
+        </li>
+        <li>
+          <a href="search.html">Search</a>
+        </li>
+        <li>
+          <a href="spotlight.html">Artist Spotlight</a>
+        </li>
+        <li>
+          <a href="playlistpage.html">Playlist</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <!-- ####################################################################################################################################### -->
       
@@ -47,30 +56,74 @@
       <br>
       <br>
       
-      <img src="clock.png" width="47" height="50" style="position: absolute; top: 475px; right: 167px;">
+      <img src="clock.png" width="47" height="50" style="position: absolute; top: 475px; right: 325px;">
       
 
       <div class="song">
         <div class="mysongs">1. Made For You</div>04:17
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Made For You">
+          <input type="hidden" name="album_name" value="Waking Up">
+          <input type="hidden" name="duration" value="04:17">
+          <input type="hidden" name="artist" value="OneRepublic">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">2. All The Right Moves</div>03:58
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="All The Right Moves">
+          <input type="hidden" name="album_name" value="Waking Up">
+          <input type="hidden" name="duration" value="03:58">
+          <input type="hidden" name="artist" value="OneRepublic">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">3. Marchin On</div>04:11
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Marchin On">
+          <input type="hidden" name="album_name" value="Waking Up">
+          <input type="hidden" name="duration" value="04:11">
+          <input type="hidden" name="artist" value="OneRepublic">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">4. Secrets</div>03:44
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Secrets">
+          <input type="hidden" name="album_name" value="Waking Up">
+          <input type="hidden" name="duration" value="03:44">
+          <input type="hidden" name="artist" value="OneRepublic">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">5. Good Life</div>04:13
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Good Life">
+          <input type="hidden" name="album_name" value="Waking Up">
+          <input type="hidden" name="duration" value="04:13">
+          <input type="hidden" name="artist" value="OneRepublic">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">6. Waking Up</div>06:07
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Waking Up">
+          <input type="hidden" name="album_name" value="Waking Up">
+          <input type="hidden" name="duration" value="06:07">
+          <input type="hidden" name="artist" value="OneRepublic">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <footer>
         <p>&copy; 2023 My Website. All rights reserved. | Website developed by AC Coders | <a href="about.html">About Us</a></p>
         </footer>
+        <script src="scripthome.js"></script>
+        <script src="addplaylist.js"></script>
 
 <!-- ####################################################################################################################################### -->
 
