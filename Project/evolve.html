@@ -13,22 +13,31 @@
 	<title>Evolve</title> 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-          <div class="logo"><img class="logo-img" src="logo.png" width="65" height="65" ALT="align box" ALIGN=CENTER>   Quaver</div>
-          <ul class="nav">
-            <li>
-              <a href="index.html#">Home</a>
-            </li>
-            <li>
-              <a href="artist.html#", style="color: lightblue;">Artists</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><img class="logo-img" src="logo.png" width="65" height="65" ALT="align box" ALIGN=CENTER>   Quaver</div>
+      <ul class="nav">
+        <li>
+          <a href="index.html#">Home</a>
+        </li>
+        <li>
+          <a href="artist.html#">Artists</a>
+        </li>
+        <li>
+          <a href="search.html">Search</a>
+        </li>
+        <li>
+          <a href="spotlight.html">Artist Spotlight</a>
+        </li>
+        <li>
+          <a href="playlistpage.html">Playlist</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <!-- ####################################################################################################################################### -->
       
@@ -47,36 +56,94 @@
       <br>
       <br>
       
-      <img src="clock.png" width="47" height="50" style="position: absolute; top: 475px; right: 167px;">
+      <img src="clock.png" width="47" height="50" style="position: absolute; top: 475px; right: 325px;">
       
 
       <div class="song">
         <div class="mysongs">1. Believer</div>03:24
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Believer">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:24">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">2. Whatever It takes</div>03:21
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Whatever It takes">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:21">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">3. Walking The Wire</div>03:52
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Walking The Wire">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:52">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">4. Thunder</div>03:07
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Thunder">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:07">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">5. Start Over</div>03:06
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Start Over">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:06">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">6. Rise Up</div>03:51
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Rise Up">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:51">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">7. Yesterday</div>03:25
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Yesterday">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:25">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <div class="song">
         <div class="mysongs">8. Dancing In The Dark</div>03:53
+        <form method="post" action="http://127.0.0.1:5000/add_song" onsubmit="addToPlaylist(event)">
+          <input type="hidden" name="song_name" value="Dancing In The Dark">
+          <input type="hidden" name="album_name" value="Evolve">
+          <input type="hidden" name="duration" value="03:53">
+          <input type="hidden" name="artist" value="Imagine Dragons">
+          <button type="submit" class="add-to-playlist">Add to playlist</button>
+        </form>
       </div>
       <footer>
         <p>&copy; 2023 My Website. All rights reserved. | Website developed by AC Coders | <a href="about.html">About Us</a></p>
         </footer>
+        <script src="scripthome.js"></script>
+        <script src="addplaylist.js"></script>
 
 <!-- ####################################################################################################################################### -->
 
