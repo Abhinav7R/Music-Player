@@ -1,12 +1,13 @@
 # iss-project-AC-
 ISS Project 
 
-Note- Since, we were not able to access the git repository for ISS project, we were not able to upload our work from time to time. Please consider. 
-
 Project Name - ISS Project Phase-1
 Team Name - AC Coders
 Team Member1 - Chetan Mahipal (2022101096)
 Team Member2 - Abhinav Raundhal (2022101089)
+
+There are 3 phases to this project - a separate branch for each is maintained.
+For final project - refer to the phase 3 branch
 
 To open the homepage of the website click on <index.html>.
 The home page will display a navigation bar at the top of the screen.
